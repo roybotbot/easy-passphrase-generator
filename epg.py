@@ -1,4 +1,5 @@
-# 58110 words
+#!usr/bin/env python3
+import pyperclip as pycp
 from random import randint
 
 word_list_file = "lowercase_english.txt"
@@ -19,4 +20,4 @@ def passphrase():
     list.append(str(randint(999,10000)).rstrip())
     return "-".join(list)
 
-print(passphrase())
+pycp.copy(passphrase())
