@@ -18,6 +18,6 @@ def passphrase():
     #pw = rand_word() + "-" + rand_word() + "-" + rand_word() + "-" + str(randint(999,10000))
         list.append(rand_word().rstrip())
     list.append(str(randint(999,10000)).rstrip())
-    return "-".join(list)
+    return "-".join(list).rstrip()
 
 pycp.copy(passphrase())
